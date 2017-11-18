@@ -1,111 +1,415 @@
-/* Move down content because we have a fixed navbar that is 3.5rem tall */
 body {
-    padding-top: 45px;;
-  }
+	color: white;
+}
 .navbar {
-  padding: 0;
-  background-color: #f3f3f3;
+	background-color: White;
+	height: 50px;
+}
+.navbar a {
+	color: #84732B;
+	font-size: 20px;
+}
+.navbar a:hover {
+	color: black;
 }
 .navbar-brand {
-  margin-left: 55px;
-}
-.navbar-nav {
-  margin-right: 25px;
-}
-.nav-link {
-  color: #bab2b5;
+	margin-left: 20px;
 }
 .jumbotron {
-  height: 100vh;
-  color: white;
-  background-image: url('../img/header-index.png');
-  background-size: cover;
-  border-radius: 0;
-  margin: 0;
+	background-image:radial-gradient(circle at 50% 50%,rgba(0,0,0,0.70),rgba(0,0,0,0.88)),url(../img/Teater-1.jpg);
+	background-size: cover;
+	border-radius: 0px;
+	margin: 0;
 }
-h2 {
-  font-size: 2.5rem;
-  color: #bab2b5
+.jumbotron img {
+	margin-top: 160px;
+	margin-bottom: 35px;
+}
+.center-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.full {
+	height: 100vh;
+}
+p {
+	font-family: 'Ubuntu', sans-serif;
 }
 h1, h2, h3 {
-  font-family: 'Fjalla One', sans-serif;
+	font-family: 'Kreon', serif;
 }
-a, p{
-  font-family: 'Cantarell', sans-serif;
-  font-size: 20px;
+h1 {
+	font-size: 70px;
 }
-.judul {
-  margin-top: 9rem;
+h2 {
+	font-size: 50px;
+	color: #84732b;
 }
-/* make section centered both(vertical and horizontal) also the height is 400px */
-.center {
-  text-align: center;
-  height: 400px;
-  margin: 0;
-  display: flex;
-  align-items: center;
+h3 {
+	font-size: 35px;
 }
-#sejarah, #tujuan {
-  background-color: #14507b;
-  color: #f3f3f3;
+p {
+	font-size: 25px;
+}
+.sejarah h2 {
+	padding-top: 90px;
+	margin-bottom: 15px;
+}
+.sejarah p {
+	margin-top: 50px;
 }
 
-#pembangunan, #perubahan {
-  background-color: #f3f3f3;
-  color: #14507b;
+.awalmula{
+	background-color: #000000;
 }
+
+.fungsi{
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.transformasi{
+	background-color: #404040;
+}
+
+.tujuan{
+	background-color: #ffffff;
+	color: #000000;
+}
+/* memberi jarak antar image di section tujuan */ 
+.jarak {
+	margin: 0 50px 0 35px;
+}
+
+.terbaru {
+	background-color: #e4e4e4;
+	color: #000000;
+}
+.terbaru img {
+	width: 250px;
+	height: 300px;
+	margin-top: 25px;
+}
+.terbaru p {
+	margin-top: 10px;
+}
+.terbaru a {
+	color: black;
+	transition-duration: 500ms;
+}
+.terbaru a:hover {
+	text-decoration: none;
+	color: #84732B;
+	background-color: black;
+}
+.terbaru .btn-custom {
+	color: white;
+	background-color: black;
+	border-color: black;
+	margin-top: 30px;
+}
+.terbaru .btn-custom:hover {
+	color: white;
+	background-color: #84732b;
+	border-color: #84732b;
+}
+.showfasilitas h2 {
+	margin-bottom: 45px;
+}
+.showfasilitas img{
+    width: 285px;
+    height: 200px;
+}
+.portfolio-box {
+    display: block;
+    max-width: 650px;
+    margin: 0 auto
+}
+
+.portfolio-box .portfolio-box-caption {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #c3a629;
+    background: rgba(0, 0, 0, .65);
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    text-align: center
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    padding: 0 15px;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 18px
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+    opacity: 1
+}
+
+.portfolio-box:focus {
+    outline: 0
+}
+
+@media (min-width:768px) {
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+        font-size: 30px
+    }
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        font-size: 22px
+    }
+}
+
+
 footer {
-  background-color: #14507b;
-  color: #f3f3f3;
-  padding: 0;
-  margin: 0;
-  height: 45px;
-  text-align: center;
+	height: 50px;
+	color: #84732B;
+	background-color: white;
+	text-align: center;
+	border-top: 1px solid #f1f1f1;
+}
+.list-inline {
+	margin-top: 50px;
+}
+.fa-circle {
+	color: #84732b;
+}
+.fa:hover {
+	color: black;
 }
 
-/*Aktivitas Page*/
-#aktivitas, #daftarAktivitas {
-  height: 100vh;
-  color: #f3f3f3;
-  background-color: #14507b;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
-#aktivitas h2 {
-  margin: 20px;
-}
-#daftarAktivitas a{
-  color: #f3f3f3
 
+/*events page*/
+.pageEvent {
+	background-image: url(../img/subtle.png); /* Background pattern from Subtle Patterns */
 }
-.row {
-  width: 100%;
+.events {
+	width: 100%;
+	height: 150px;
+	background-image:linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(../img/events/head-event.jpg);
 }
-.row p{
-  margin-top: 10px;
+.events h1 {
+	text-align: center;	
 }
-.w-100 {
-  margin: 20px;
+.isi {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 15px;
+	color: black;
+}
+.isi p {
+	font-size: 20px;
+	color: #525252;
+}
+.isi a {
+	color: black;
+	transition-duration: 500ms;
+}
+.isi a:hover {
+	text-decoration: none;
+	color: #84732B;
+}
+h4 {
+	font-size: 25px;
+	color: #84732B;
+}
+.page{
+	padding: 0 30px 30px 30px;
+}
+.page a{
+	color: #84732B;
+	size:20px;
+	margin: 0 15px 0 15px;
 }
 
-/* Tentang Page */
-.gradient {
-  width: 100%;
-  background: linear-gradient(#f3f3f3 60%, #14507b);
+/*Child of events page*/
+/*artikel page*/
+.artikel {
+	padding: 0 70px;
 }
-#tentang {
-  height: 589px;
+.artikel h3 {
+	padding-top: 70px;
+	margin-bottom: 35px;
+	color: #84732b; 
+	text-align: center;
 }
-#maps {
-  color: #f3f3f3;
-  background-color: #14507b;
-  text-align: center;
+.artikel img {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: table-cell;
+}
+.artikel a {
+	display: inline
+}
+.artikel p {
+	margin-top: 35px;
+	color: #333;
+	font-size: 20px;
 }
 
-/* Berkemah Page */
-#berkemah {
-  color: #f3f3f3;
-  background-color: #00a859;
-  height: 589px;
+
+
+/*fasilitas page*/
+.half {
+	height: 50vh;
+	display: flex;
+	align-items: center;
 }
+.pageFasilitas h2 {
+	color: #c3a629;
+}
+.pageFasilitas p {
+	color: black;
+}
+.terbuka {
+	background-image:linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)),url(../img/Fasilitas/teaterTerbuka.jpg);
+	background-attachment: fixed;
+}
+.tertutup {
+	background-image:linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)),url(../img/Fasilitas/teaterTertutup.jpg);
+	background-attachment: fixed;
+}
+.galleri {
+	background-image:linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)),url(../img/Fasilitas/galleri.jpg);
+	background-attachment: fixed;
+}
+.sanggar {
+	background-image:linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)),url(../img/Fasilitas/sanggar.jpg);
+	background-attachment: fixed;
+}
+.wisma {
+	background-image:linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)),url(../img/Fasilitas/wisma.jpg);
+	background-attachment: fixed;
+}
+.cafetaria {
+	background-image:linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)),url(../img/Fasilitas/cafetaria.jpg);
+	background-attachment: fixed;
+}
+.cinderamata {
+	background-image:linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)),url(../img/Fasilitas/cinderamata.jpg);
+	background-attachment: fixed;
+}
+.sekretariat {
+	background-image:linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,0.70)),url(../img/Fasilitas/sekretariat.jpg);
+	background-attachment: fixed;
+}
+
+
+
+
+/*tentang page*/
+.lokasi h2 {
+	color: white;
+	padding-top: 20px;
+	margin-bottom: 30px;
+}
+.kontak {
+	color: black;
+}
+.kontak h2 {
+	padding-top: 70px;
+}
+.kontak h3 {
+	margin-top: 25px;
+}
+
+/* bootsnip contact page*/
+section#contact {
+    background-color: #222222;
+    background-image: url('https://www.transparenttextures.com/patterns/binding-light.png');
+    background-position: center;
+}
+.contact{
+    padding: 30px 0PX;
+}
+section#contact .section-heading {
+    color: white;
+}
+section#contact .form-group {
+    margin-bottom: 25px;
+}
+section#contact .form-group input,
+section#contact .form-group textarea {
+    padding: 20px;
+}
+section#contact .form-group input.form-control {
+    height: auto;
+}
+section#contact .form-group textarea.form-control {
+    height: 236px;
+}
+section#contact .form-control:focus {
+    border-color: #fed136;
+    box-shadow: none;
+}
+section#contact ::-webkit-input-placeholder {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #b9b9b9;
+}
+.gellary_bg_none img{
+	width: 100%;
+	height: 250px;
+}
+section#contact :-moz-placeholder {
+    /* Firefox 18- */
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #b9b9b9;
+}
+section#contact ::-moz-placeholder {
+    /* Firefox 19+ */
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #b9b9b9;
+}
+section#contact :-ms-input-placeholder {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #b9b9b9;
+}
+section#contact .text-danger {
+    color: #e74c3c;
+}
+
+.about_our_company{
+    text-align: center;
+}
+.about_our_company h1{
+    font-size: 35px;
+}
+.btn-gold {
+	color: white;
+	background-color: transparent;
+	border-color: white;
+}
+.btn-gold:hover {
+	color: white;
+	background-color: #84732b;
+	border-color: #84732b;
+}
+/* end of bootsnip contact page*/
