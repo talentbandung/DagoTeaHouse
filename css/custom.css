@@ -1,0 +1,111 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+    padding-top: 45px;;
+  }
+.navbar {
+  padding: 0;
+  background-color: #f3f3f3;
+}
+.navbar-brand {
+  margin-left: 55px;
+}
+.navbar-nav {
+  margin-right: 25px;
+}
+.nav-link {
+  color: #bab2b5;
+}
+.jumbotron {
+  height: 100vh;
+  color: white;
+  background-image: url('../img/header-index.png');
+  background-size: cover;
+  border-radius: 0;
+  margin: 0;
+}
+h2 {
+  font-size: 2.5rem;
+  color: #bab2b5
+}
+h1, h2, h3 {
+  font-family: 'Fjalla One', sans-serif;
+}
+a, p{
+  font-family: 'Cantarell', sans-serif;
+  font-size: 20px;
+}
+.judul {
+  margin-top: 9rem;
+}
+/* make section centered both(vertical and horizontal) also the height is 400px */
+.center {
+  text-align: center;
+  height: 400px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+#sejarah, #tujuan {
+  background-color: #14507b;
+  color: #f3f3f3;
+}
+
+#pembangunan, #perubahan {
+  background-color: #f3f3f3;
+  color: #14507b;
+}
+footer {
+  background-color: #14507b;
+  color: #f3f3f3;
+  padding: 0;
+  margin: 0;
+  height: 45px;
+  text-align: center;
+}
+
+/*Aktivitas Page*/
+#aktivitas, #daftarAktivitas {
+  height: 100vh;
+  color: #f3f3f3;
+  background-color: #14507b;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+#aktivitas h2 {
+  margin: 20px;
+}
+#daftarAktivitas a{
+  color: #f3f3f3
+
+}
+.row {
+  width: 100%;
+}
+.row p{
+  margin-top: 10px;
+}
+.w-100 {
+  margin: 20px;
+}
+
+/* Tentang Page */
+.gradient {
+  width: 100%;
+  background: linear-gradient(#f3f3f3 60%, #14507b);
+}
+#tentang {
+  height: 589px;
+}
+#maps {
+  color: #f3f3f3;
+  background-color: #14507b;
+  text-align: center;
+}
+
+/* Berkemah Page */
+#berkemah {
+  color: #f3f3f3;
+  background-color: #00a859;
+  height: 589px;
+}
